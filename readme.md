@@ -10,7 +10,7 @@ We are still developing additional features for the package. Please contribute t
 
 `yarn add use-epoch`
 
-## `useNow()`
+## `useNow`
 
 `useNow()` is a react hook that allows you to retrieve the current timestamp value and return the result every 1 second
 
@@ -26,11 +26,15 @@ function App() {
 }
 ```
 
-## `useTimeStatus(start, end)` (in development)
+## `useTimeStatus` (in development)
+
+`useTimeStatus(start, end)`
 
 The desired return result is `upcoming`, `ongoing`, or `ended` based on the current time.
 
-## `useEpochStatus([timestamp0, timestamp1, ... , timestampN])` (in development)
+## `useEpochStatus` (in development)
+
+`useEpochStatus([timestamp0, timestamp1, ... , timestampN])`
 
 The desired return result is `0`, `-1`, or `1`, `2`, `3`,... `n` based on the current time.
 

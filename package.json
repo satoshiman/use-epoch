@@ -1,6 +1,6 @@
 {
   "name": "use-epoch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Hook to get Timestamp repeatly, countdown and determine status of process base on timestamp",
   "main": "index.js",
   "scripts": {
