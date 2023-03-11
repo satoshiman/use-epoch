@@ -1,0 +1,28 @@
+{
+  "name": "use-epoch",
+  "version": "1.0.0",
+  "description": "React Hook to get Timestamp repeatly, countdown and determine status of process base on timestamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satoshiman/use-epoch.git"
+  },
+  "keywords": [
+    "timestamp",
+    "coundown",
+    "time",
+    "status"
+  ],
+  "author": "@satoshiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satoshiman/use-epoch/issues"
+  },
+  "homepage": "https://github.com/satoshiman/use-epoch#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
