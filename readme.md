@@ -6,39 +6,43 @@ We are still developing additional features for the package. Please contribute t
 
 ## Installation
 
-`npm install use-epoch`
+```cli
+npm install use-epoch
+```
 
-`yarn add use-epoch`
+```cli
+yarn add use-epoch
+```
 
-## `useNow`
+## useNow
 
 `useNow()` is a react hook that allows you to retrieve the current timestamp value and return the result every 1 second
 
-```
+```jsx
 import { useNow } from "use-epoch";
 function App() {
   let now = useNow();
-  return (
-    <div>
-        {now}
-    </div>
-  );
+  return <div>{now}</div>;
 }
 ```
 
-## `useTimeStatus` (in development)
+## useTimeStatus (in development)
 
-`useTimeStatus(start, end)`
+```jsx
+useTimeStatus(start, end);
+```
 
 The desired return result is `upcoming`, `ongoing`, or `ended` based on the current time.
 
-## `useEpochStatus` (in development)
+## useEpochStatus (in development)
 
-`useEpochStatus([timestamp0, timestamp1, ... , timestampN])`
+```jsx
+useEpochStatus([timestamp0, timestamp1, ... , timestampN])
+```
 
 The desired return result is `0`, `-1`, or `1`, `2`, `3`,... `n` based on the current time.
 
-```
+```jsx
 timestamp     0      1      2      3      n-1    n
 --------------|------|------|------|--   --|-----|-----
 return       0|1     |2     |3     |4      |n    | -1
@@ -49,13 +53,13 @@ return       0|1     |2     |3     |4      |n    | -1
 
 React component to render a countdown clock
 
-```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Countdown } from 'use-epoch';
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import { Countdown } from "use-epoch";
 
 ReactDOM.render(
   <Countdown date={Date.now() + 10000} />,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
